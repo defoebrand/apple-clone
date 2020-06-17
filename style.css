@@ -1,0 +1,77 @@
+body {
+  width: 95vw;
+  position: relative;
+}
+
+header {
+  border: 1px solid black;
+  padding: 15px;
+  background: gray;
+  height: 15px;
+  margin: 75px 125px;
+  position: absolute;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(8, 100px) 125px;
+}
+
+nav * {
+  background: none;
+  border-top: none;
+  border-bottom: none;
+}
+
+main {
+  background: url('images/background.png');
+  background-size: 80%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 538px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main * {
+  text-align: center;
+}
+
+section {
+  display: flex;
+  width: 100%;
+}
+
+section * {
+  width: 25%;
+  height: 200px;
+  margin: 2px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 15px;
+}
+
+footer * {
+  font-size: 10px;
+}
+
+.shop {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.links {
+}
+
+.links img {
+  width: 16px;
+  height: 16px;
+}
