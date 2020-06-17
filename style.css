@@ -1,3 +1,11 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   width: 95vw;
   position: relative;
@@ -25,7 +33,7 @@ nav * {
 
 main {
   background: url('images/background.png');
-  background-size: 80%;
+  background-size: 100%;
   background-position: bottom;
   background-repeat: no-repeat;
   width: 100%;
@@ -34,10 +42,21 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+	
 }
 
 main * {
   text-align: center;
+}
+main a h2{
+	font-size: 34px;
+	line-height: 36px;
+	color: white;
+	padding-bottom: 20px;
+}
+main a{
+	color: white;
+	padding-bottom: 10px;
 }
 
 section {
@@ -66,9 +85,25 @@ footer * {
   display: flex;
   flex-direction: column;
   width: 400px;
+	font-family: Lucida Grande;
+	font-size: 10px;
+	color: rgb(110,110,110);
 }
 
-.links {
+.shop a{
+	color: rgb(0, 136, 204);
+	text-decoration: none;
+}
+.shop a:hover{
+	color: rgb(0, 136, 204);
+}
+
+.links a{
+	font-family: Lucida Grande;
+	color: rgb(0, 136, 204);
+	border-left: 1px solid  rgb(0, 136, 204);
+	padding: 0 10px;
+	text-decoration: none;
 }
 
 .links img {
