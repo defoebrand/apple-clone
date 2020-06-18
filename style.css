@@ -8,28 +8,37 @@
 
 body {
   width: 1450px;
-  height: 1470px;
-  margin: auto;
-}
-
-header {
-  border: 1px solid black;
-  padding: 15px;
-  background: gray;
-  height: 15px;
-  width: 950px;
+  min-width:1024px;
+  min-height:830px;
+  height:830px;
+  max-height:1472px;
   margin: auto;
 }
 
 nav {
   display: grid;
   grid-template-columns: repeat(8, 100px) 125px;
+  border-radius: 4px;
+  background: gray;
+  width: 950px;
+  margin: 0 250px 425px 250px;
+  position: absolute;
+
 }
 
-nav * {
-  background: none;
-  border-top: none;
-  border-bottom: none;
+nav button {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 10px 5px;
+  border-right: 1px solid black;
+}
+
+nav input {
+  border-radius: 25px;
+  width: 110px;
+  margin: auto;
+  background: transparent;
 }
 
 main {
@@ -42,24 +51,38 @@ main {
   margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   font-family: Lucida, sans-serif;
+  position: relative;
 }
 
-main * {
+main a{
+	color: white;
+	padding: 0 300px 10px 300px;
+  font-family: Lucida, sans-serif;
   text-align: center;
   text-decoration: none;
+
 }
+
 main a h2{
-	font-size: 34px;
-	line-height: 36px;
+	font-size: 50px;
 	color: white;
 	padding-bottom: 20px;
 }
-main a{
-	color: white;
-	padding-bottom: 10px;
+
+main a p {
+ font-size: 30px;
+}
+
+.verse {
+  margin: 15px 0 150px 0;
+  font-size: 25px;
+}
+
+.verse:hover {
+  text-decoration: underline;
 }
 
 section {
@@ -98,7 +121,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 15px;
+  margin: 15px 0 25px 0;
   line-height: 25px;
 }
 
