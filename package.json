@@ -1,0 +1,22 @@
+{
+  "name": "apple",
+  "version": "1.0.0",
+  "description": "Kartheek and Brandon's Apple web page clone project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/defoebrand/apple-clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/defoebrand/apple-clone/issues"
+  },
+  "homepage": "https://github.com/defoebrand/apple-clone#readme",
+  "devDependencies": {
+    "hint": "^6.0.6"
+  }
+}
