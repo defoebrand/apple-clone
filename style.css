@@ -7,8 +7,9 @@
 }
 
 body {
-  width: 95vw;
-  position: relative;
+  width: 1450px;
+  height: 1470px;
+  margin: auto;
 }
 
 header {
@@ -16,8 +17,8 @@ header {
   padding: 15px;
   background: gray;
   height: 15px;
-  margin: 75px 125px;
-  position: absolute;
+  width: 950px;
+  margin: auto;
 }
 
 nav {
@@ -36,17 +37,19 @@ main {
   background-size: 100% ;
   background-position: bottom;
   background-repeat: no-repeat;
-  width: 105%;
-  height: 538px;
+  width: 1450px;
+  height: 1180px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-	
+  font-family: Lucida, sans-serif;
 }
 
 main * {
   text-align: center;
+  text-decoration: none;
 }
 main a h2{
 	font-size: 34px;
@@ -61,13 +64,34 @@ main a{
 
 section {
   display: flex;
-  width: 100%;
+  margin: auto;
+  width: 1450px;
 }
 
 section * {
   width: 26%;
   height: 200px;
   margin: 2px;
+
+}
+
+.forward {
+  background: url('images/forward.png');
+  background-size: contain;
+}
+
+.colorful {
+  background: url('images/colorful.png');
+  background-size: contain;
+}
+
+.birthday {
+  background: url('images/birthday.png');
+  background-size: contain;
+}
+.responsibility {
+  background: url('images/responsibility.png');
+  background-size: contain;
 }
 
 footer {
@@ -75,6 +99,7 @@ footer {
   justify-content: center;
   align-items: flex-start;
   margin-top: 15px;
+  line-height: 25px;
 }
 
 footer * {
@@ -98,10 +123,19 @@ footer * {
 	color: rgb(0, 136, 204);
 }
 
+.links {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.links * {
+  place-self: center;
+}
+
 .links a{
-	font-family: Lucida Grande;
+	font-family: Lucida, Grande;
 	color: rgb(0, 136, 204);
-	border-left: 1px solid  rgb(0, 136, 204);
+	border-right: 1px solid  rgb(0, 136, 204);
 	padding: 0 10px;
 	text-decoration: none;
 }
@@ -109,4 +143,5 @@ footer * {
 .links img {
   width: 16px;
   height: 16px;
+  margin-left: 10px;
 }
