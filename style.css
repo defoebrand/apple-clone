@@ -10,7 +10,7 @@
 
 body {
   max-width: 1275px;
-  max-height:1472px;
+  max-height: 1472px;
   margin: auto;
 }
 
@@ -18,7 +18,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(8, 100px) 125px;
   border-radius: 4px;
-  background: linear-gradient(#727272 50%,#8a8a8a 50%);
+  background: linear-gradient(#727272 50%, #8a8a8a 50%);
   width: 950px;
   top: 75px;
   position: absolute;
@@ -30,11 +30,11 @@ nav button {
   color: white;
   padding: 5px;
   border-right: 1px solid #505050;
-	cursor: pointer;
+  cursor: pointer;
 }
 
-nav button:hover{
-	background-color:#3A3A3A;
+nav button:hover {
+  background-color: #3a3a3a;
   opacity: 0.5;
 }
 
@@ -45,7 +45,7 @@ button[name=apple] {
 }
 
 button img {
-	width: 15px;
+  width: 15px;
 }
 
 nav span {
@@ -55,7 +55,6 @@ nav span {
 nav span input {
   border-radius: 25px;
   width: 110px;
-  margin: auto;
   background: transparent;
   padding-left: 15px;
   margin: 5px;
@@ -71,7 +70,7 @@ nav span img {
 
 main {
   background: url('images/background.png');
-  background-size: 100% ;
+  background-size: 100%;
   background-position: bottom;
   background-repeat: no-repeat;
   width: 100%;
@@ -85,37 +84,36 @@ main {
 }
 
 main a {
-	color: white;
-	padding: 0 250px 10px 250px;
+  color: white;
+  padding: 0 250px 10px 250px;
   text-align: center;
   text-decoration: none;
 }
 
-main a h2{
-	font-size: 50px;
-	color: white;
-	padding-bottom: 10px;
+main a h2 {
+  font-size: 50px;
+  color: white;
+  padding-bottom: 10px;
 }
 
 main a p {
- font-size: 25px;
+  font-size: 25px;
 }
 
 .verse {
   margin: 15px 0 115px 0;
   font-size: 20px;
-	align-items: center;
-	display: flex;
-
+  align-items: center;
+  display: flex;
 }
 
 .verse:hover {
   text-decoration: underline;
 }
 
-.verse img{
-	width: 30px;
-	margin-left: 10px;
+.verse img {
+  width: 30px;
+  margin-left: 10px;
 }
 
 section {
@@ -167,7 +165,8 @@ footer * {
   font-size: 10px;
 }
 
-.shop p, .links {
+.shop p,
+.links {
   padding-top: 15px;
 }
 
@@ -175,15 +174,23 @@ footer * {
   display: flex;
   flex-direction: column;
   width: 475px;
-	color: rgb(110,110,110);
+  color: rgb(110, 110, 110);
 }
 
-.shop a{
-	color: rgb(0, 136, 204);
-	text-decoration: none;
+.shop a {
+  color: rgb(0, 136, 204);
+  text-decoration: none;
 }
-.shop a:hover{
-	color: rgb(0, 136, 204);
+
+.links a {
+  color: rgb(0, 136, 204);
+  border-right: 1.5px solid #d1d1d1;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.shop a:hover {
+  color: rgb(0, 136, 204);
 }
 
 .links {
@@ -193,13 +200,6 @@ footer * {
 
 .links * {
   place-self: center;
-}
-
-.links a{
-	color: rgb(0, 136, 204);
-	border-right: 1.5px solid #d1d1d1;
-	padding: 0 10px;
-	text-decoration: none;
 }
 
 .links img {

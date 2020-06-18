@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/defoebrand/apple-clone#readme",
   "devDependencies": {
-    "hint": "^6.0.6"
+    "hint": "^6.0.6",
+    "stylelint": "^13.6.1",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-scss": "^3.18.0"
+  },
+  "dependencies": {
+    "lighthouse": "^6.0.0"
   }
 }
