@@ -4,6 +4,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Lucida Sans Unicode";
+  font-weight: 100;
 }
 
 body {
@@ -23,35 +25,48 @@ nav {
   width: 950px;
   margin: 0 250px 425px 250px;
   position: absolute;
-	
-
 }
-
 
 nav button {
   background: transparent;
   border: none;
   color: white;
-  padding: 10px 5px;
-  border-right: 1px solid black;
+  padding: 5px;
+  border-right: 1px solid #505050;
 	cursor: pointer;
 }
 nav button:hover{
 	background-color:#3A3A3A;
+  opacity: 0.5;
+}
+button[name=apple] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 button img {
-	width: 20px;
-	height: 20px;
-	
+	width: 30px;
 }
-
-nav input {
+nav span {
+  position: relative;
+}
+nav span input {
   border-radius: 25px;
   width: 110px;
   margin: auto;
   background: transparent;
+  padding-left: 20px;
+  margin: 5px;
 }
-
+nav span input:focus {
+  background: white;
+  width: 130px;
+}
+nav span img {
+  position: absolute;
+  width: 15px;
+  margin: 10px 0 0 10px;
+}
 main {
   background: url('images/background.png');
   background-size: 100% ;
@@ -64,14 +79,12 @@ main {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  font-family: Lucida, sans-serif;
   position: relative;
 }
 
 main a{
 	color: white;
 	padding: 0 300px 10px 300px;
-  font-family: Lucida, sans-serif;
   text-align: center;
   text-decoration: none;
 
@@ -84,12 +97,12 @@ main a h2{
 }
 
 main a p {
- font-size: 30px;
+ font-size: 25px;
 }
 
 .verse {
-  margin: 15px 0 150px 0;
-  font-size: 25px;
+  margin: 15px 0 155px 0;
+  font-size: 20px;
 }
 
 .verse:hover {
@@ -132,22 +145,23 @@ footer {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin: 15px 0 25px 0;
- 
+  margin: 5px 0 25px 0;
+
 }
 
 footer * {
   font-size: 10px;
 }
 
+.shop p, .links {
+  padding-top: 15px;
+}
+
 .shop {
   display: flex;
   flex-direction: column;
-  width: 500px;
-	font-family: Lucida Grande;
-	font-size: 10px;
+  width: 475px;
 	color: rgb(110,110,110);
-	line-height: 25px;
 }
 
 .shop a{
@@ -168,9 +182,8 @@ footer * {
 }
 
 .links a{
-	font-family: Lucida, Grande;
 	color: rgb(0, 136, 204);
-	border-right: 1px solid  rgb(110,110,110);
+	border-right: 1.5px solid #d1d1d1;
 	padding: 0 10px;
 	text-decoration: none;
 }
