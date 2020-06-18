@@ -45,7 +45,7 @@ button[name=apple] {
   justify-content: center;
 }
 button img {
-	width: 30px;
+	width: 15px;
 }
 nav span {
   position: relative;
@@ -103,10 +103,17 @@ main a p {
 .verse {
   margin: 15px 0 155px 0;
   font-size: 20px;
+	align-items: center;
+	display: flex;
+	
 }
 
 .verse:hover {
   text-decoration: underline;
+}
+.verse img{
+	width: 30px;
+	margin-left: 10px;
 }
 
 section {
