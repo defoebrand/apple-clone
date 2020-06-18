@@ -19,7 +19,7 @@ This project was the second project compiled by Brandon and Kartheek in the Micr
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/)
+[Live Demo Link](https://rawcdn.githack.com/defoebrand/apple-clone/ff6fa1aad580f21ad2f56d284517af97a02fb079/index.html)
 
 
 ## Getting Started
