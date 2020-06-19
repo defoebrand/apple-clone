@@ -9,9 +9,12 @@
 }
 
 body {
-  max-width: 1275px;
-  max-height: 1472px;
+  max-width: 1500px;
+  max-height: 100vh;
   margin: auto;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 1fr 180px 70px;
 }
 
 nav {
@@ -81,6 +84,7 @@ main {
   justify-content: flex-end;
   align-items: center;
   position: relative;
+	grid-area: 1/1/2/2;
 }
 
 main a {
@@ -116,40 +120,40 @@ main a p {
   margin-left: 10px;
 }
 
-section {
+.apple-images {
   display: flex;
-  margin: auto;
   width: 100%;
+	grid-area: 2/1/3/2;
+	
 }
 
-section * {
+.apple-images * {
   width: 26%;
   min-height: 175px;
-  max-height: 200px;
   margin: 2px;
 }
 
 .forward {
   background: url('images/forward.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .colorful {
   background: url('images/colorful.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .birthday {
   background: url('images/birthday.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .responsibility {
   background: url('images/responsibility.png');
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -159,6 +163,7 @@ footer {
   align-items: flex-start;
   margin: 5px auto 25px auto;
   width: 100%;
+	grid-area: 3/1/4/2;
 }
 
 footer * {

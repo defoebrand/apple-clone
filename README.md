@@ -6,7 +6,7 @@ Kartheek and Brandon's Apple web page clone project
 
 Additional description about the project and its features.
 
-This project was the second project compiled by Brandon and Kartheek in the Microverse HTML/CSS section of the course work. It involved recreating an Apple web page.
+This project was the second project compiled by Brandon and Kartheek in the Microverse HTML/CSS apple-images of the course work. It involved recreating an Apple web page.
 
 ## Built With
 
