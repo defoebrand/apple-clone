@@ -10,11 +10,13 @@
 
 body {
   max-width: 1500px;
-  max-height: 100vh;
+  min-height: 830px;
+  height: 100vh;
+  max-height: 1472px;
   margin: auto;
-	display: grid;
-	grid-template-columns: 100%;
-	grid-template-rows: 1fr 180px 70px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 180px 85px;
 }
 
 nav {
@@ -74,40 +76,51 @@ nav span img {
 main {
   background: url('images/background.png');
   background-size: 100%;
-  background-position: bottom;
+  background-position: bottom center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 475px;
+  height: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   position: relative;
-	grid-area: 1/1/2/2;
+  grid-area: 1/1/2/2;
 }
 
-main a {
+.text-content {
+  width: 980px;
+  margin: 25px 250px 100px 250px;
+  padding: 0 100px;
+}
+
+.text-content a {
   color: white;
-  padding: 0 250px 10px 250px;
   text-align: center;
   text-decoration: none;
+  float: left;
 }
 
-main a h2 {
+.text-content a h2 {
   font-size: 50px;
+  height: 104px;
   color: white;
   padding-bottom: 10px;
 }
 
-main a p {
+.text-content a p {
   font-size: 25px;
+  height: 82px;
 }
 
 .verse {
-  margin: 15px 0 115px 0;
   font-size: 20px;
+  height: 64px;
+  width: 540px;
+  margin: 0 110px;
   align-items: center;
+  justify-content: center;
   display: flex;
 }
 
@@ -123,13 +136,13 @@ main a p {
 .apple-images {
   display: flex;
   width: 100%;
-	grid-area: 2/1/3/2;
-	
+  grid-area: 2/1/3/2;
 }
 
 .apple-images * {
   width: 26%;
   min-height: 175px;
+  min-width: 175px;
   margin: 2px;
 }
 
@@ -163,7 +176,7 @@ footer {
   align-items: flex-start;
   margin: 5px auto 25px auto;
   width: 100%;
-	grid-area: 3/1/4/2;
+  grid-area: 3/1/4/2;
 }
 
 footer * {
