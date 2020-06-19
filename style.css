@@ -1,0 +1,227 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans Unicode", serif;
+  font-weight: 100;
+}
+
+body {
+  max-width: 1500px;
+  min-height: 830px;
+  height: 100vh;
+  max-height: 1472px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 180px 85px;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(8, 100px) 125px;
+  border-radius: 4px;
+  background: linear-gradient(#727272 50%, #8a8a8a 50%);
+  width: 950px;
+  top: 75px;
+  position: absolute;
+}
+
+nav button {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 5px;
+  border-right: 1px solid #505050;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #3a3a3a;
+  opacity: 0.5;
+}
+
+button[name=apple] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button img {
+  width: 15px;
+}
+
+nav span {
+  position: relative;
+}
+
+nav span input {
+  border-radius: 25px;
+  width: 110px;
+  background: transparent;
+  padding-left: 15px;
+  margin: 5px;
+}
+
+nav span img {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin: 12px 0 0 10px;
+  filter: invert(1);
+}
+
+main {
+  background: url('images/background.png');
+  background-size: 100%;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  grid-area: 1/1/2/2;
+}
+
+.shop p,
+.links {
+  padding-top: 15px;
+}
+
+.text-content {
+  width: 980px;
+  margin: 25px 250px 100px 250px;
+  padding: 0 100px;
+}
+
+.text-content a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  float: left;
+}
+
+.text-content a h2 {
+  font-size: 50px;
+  height: 104px;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.text-content a p {
+  font-size: 25px;
+  height: 82px;
+}
+
+.verse {
+  font-size: 20px;
+  height: 64px;
+  width: 540px;
+  margin: 0 110px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.verse:hover {
+  text-decoration: underline;
+}
+
+.verse img {
+  width: 30px;
+  margin-left: 10px;
+}
+
+footer * {
+  font-size: 10px;
+}
+
+.apple-images {
+  display: flex;
+  width: 100%;
+  grid-area: 2/1/3/2;
+}
+
+.apple-images * {
+  width: 26%;
+  min-height: 175px;
+  min-width: 175px;
+  margin: 2px;
+}
+
+.forward {
+  background: url('images/forward.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.colorful {
+  background: url('images/colorful.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.birthday {
+  background: url('images/birthday.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.responsibility {
+  background: url('images/responsibility.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 5px auto 25px auto;
+  width: 100%;
+  grid-area: 3/1/4/2;
+}
+
+.shop {
+  display: flex;
+  flex-direction: column;
+  width: 475px;
+  color: rgb(110, 110, 110);
+}
+
+.shop a {
+  color: rgb(0, 136, 204);
+  text-decoration: none;
+}
+
+.links a {
+  color: rgb(0, 136, 204);
+  border-right: 1.5px solid #d1d1d1;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.shop a:hover {
+  color: rgb(0, 136, 204);
+}
+
+.links {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.links * {
+  place-self: center;
+}
+
+.links img {
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+}
