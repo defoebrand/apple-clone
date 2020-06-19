@@ -89,6 +89,11 @@ main {
   grid-area: 1/1/2/2;
 }
 
+.shop p,
+.links {
+  padding-top: 15px;
+}
+
 .text-content {
   width: 980px;
   margin: 25px 250px 100px 250px;
@@ -131,6 +136,10 @@ main {
 .verse img {
   width: 30px;
   margin-left: 10px;
+}
+
+footer * {
+  font-size: 10px;
 }
 
 .apple-images {
@@ -177,15 +186,6 @@ footer {
   margin: 5px auto 25px auto;
   width: 100%;
   grid-area: 3/1/4/2;
-}
-
-footer * {
-  font-size: 10px;
-}
-
-.shop p,
-.links {
-  padding-top: 15px;
 }
 
 .shop {
